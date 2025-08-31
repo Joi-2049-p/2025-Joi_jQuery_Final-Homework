@@ -1,0 +1,270 @@
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*------box-sizing Reset-----------*/
+
+:root {
+  --theme-color: #0e300f;
+  --color-white: #ffffff;
+  --second-theme-color: #c8a85b;
+  --background-color: #f4f3f1;
+}
+
+.wrap {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.scroll_bnt {
+  width: 65px;
+  height: 65px;
+  background: var(--theme-color);
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px #e9e9e9;
+}
+
+.scroll_bnt i {
+  color: var(--background-color);
+  font-size: 30px;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+}
+
+nav {
+  background: var(--theme-color);
+  padding: 35px 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 a {
+  background-image: url(../images/Logo.png);
+  display: block;
+  width: 266px;
+  height: 51px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu li a {
+  display: block;
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 15px 45px;
+  border: 1px solid #ffffff;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  position: relative;
+}
+
+.menu li a:hover {
+  color: var(--theme-color);
+  border: 1px solid var(--second-theme-color);
+  background: var(--second-theme-color);
+}
+
+.menu li a.active {
+  background: var(--second-theme-color);
+  color: var(--color-white);
+  border: 1px solid var(--second-theme-color);
+}
+
+.hamburger a {
+  border: none !important;
+}
+
+.hamburger a i {
+  font-size: 20px;
+}
+
+.menu ul {
+  display: none;
+  position: absolute;
+}
+
+.menu li .item_1 {
+  width: 175px;
+  z-index: 10;
+  background-color: #ffffff;
+}
+
+.menu li .item_2 {
+  width: 138px;
+  z-index: 10;
+  background-color: #ffffff;
+}
+
+.menu li .item_3 {
+  width: 279px;
+  z-index: 10;
+  background-color: #ffffff;
+}
+
+.menu li .item_1 a,
+.menu li .item_2 a,
+.menu li .item_3 a {
+  color: var(--theme-color);
+}
+
+.menu li .item_1 a:hover,
+.menu li .item_2 a:hover,
+.menu li .item_3 a:hover {
+  color: var(--color-white);
+  background: var(--theme-color);
+  border: 1px solid var(--color-white);
+}
+
+.banner {
+  background-color: #f4f3f1;
+}
+
+/*--side menu------------------------*/
+.side_menu {
+  position: absolute;
+  width: 350px;
+  height: 100%;
+  background: black;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  transform: translatex(350px);
+  transition: all 1s;
+}
+
+.menu_open {
+  transform: translatex(0px);
+}
+
+.side_menu i {
+  color: var(--color-white);
+  font-size: 20px;
+  padding: 20px;
+}
+
+.side_menu > ul > li a {
+  display: block;
+  color: var(--color-white);
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 0.1rem;
+  padding: 30px 20px;
+}
+
+.side_menu > ul > li a:hover {
+  background-color: var(--theme-color);
+}
+/*--Swiper------------------------*/
+.swiper {
+  width: 1620px;
+  height: 760px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--color-white);
+}
+
+.swiper-button-prev {
+  margin-left: 20px;
+}
+
+.swiper-button-next {
+  margin-right: 20px;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgb(255, 255, 255) !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--second-theme-color) !important;
+  width: 15px !important;
+  height: 15px !important;
+}
+/*--content------------------------*/
+.content {
+  background-color: var(--background-color);
+}
+
+.photo-zone {
+  width: 1620px;
+  margin: 0 auto;
+}
+
+.photo-zone ul {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 50px 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.photo-zone ul li {
+  width: 500px;
+  margin-top: 20px;
+}
+
+.photo-zone li :hover {
+  transform: translateY(-10px) scale(1.02);
+  transition: 0.5s ease-in-out;
+  border-radius: 0 50px 0 0;
+}
+
+/*--footer------------------------*/
+
+footer {
+  background: var(--theme-color);
+  padding: 20px 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h2 {
+  background-image: url(../images/Logo.png);
+  display: block;
+  width: 266px;
+  height: 51px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+footer .socail_media {
+  display: flex;
+}
+
+footer .socail_media a {
+  color: var(--background-color);
+  font-size: 35px;
+  display: block;
+  padding: 5px 5px;
+  margin-right: 10px;
+}
+
+footer .socail_media a:hover {
+  color: var(--second-theme-color);
+}
