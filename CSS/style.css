@@ -104,19 +104,19 @@ nav h1 a {
 
 .menu li .item_1 {
   width: 175px;
-  z-index: 10;
+  z-index: 5;
   background-color: #ffffff;
 }
 
 .menu li .item_2 {
   width: 138px;
-  z-index: 10;
+  z-index: 5;
   background-color: #ffffff;
 }
 
 .menu li .item_3 {
   width: 279px;
-  z-index: 10;
+  z-index: 5;
   background-color: #ffffff;
 }
 
@@ -144,7 +144,7 @@ nav h1 a {
   width: 350px;
   height: 100%;
   background: black;
-  z-index: 5;
+  z-index: 10;
   top: 0;
   right: 0;
   transform: translatex(350px);

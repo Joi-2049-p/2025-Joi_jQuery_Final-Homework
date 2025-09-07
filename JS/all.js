@@ -42,6 +42,7 @@ $(document).ready(function () {
   $(".hamburger-bnt").click(function (event) {
     event.preventDefault();
     $(".side_menu").toggleClass("menu_open");
+    $(this).removeClass("active");
   });
 
   $(".menu-close").click(function (event) {
