@@ -8,16 +8,34 @@ $(document).ready(function () {
   $(".nav-bnt-1").click(function (event) {
     event.preventDefault();
     $(".item_1").slideToggle();
+    $(this).parent().siblings().find(".item_2,.item_3").slideUp();
+    $(this)
+      .parent()
+      .siblings()
+      .find(".nav-bnt-2,.nav-bnt-3")
+      .removeClass("active ");
   });
 
   $(".nav-bnt-2").click(function (event) {
     event.preventDefault();
     $(".item_2").slideToggle();
+    $(this).parent().siblings().find(".item_1,.item_3").slideUp();
+    $(this)
+      .parent()
+      .siblings()
+      .find(".nav-bnt-1,.nav-bnt-3")
+      .removeClass("active ");
   });
 
   $(".nav-bnt-3").click(function (event) {
     event.preventDefault();
     $(".item_3").slideToggle();
+    $(this).parent().siblings().find(".item_1,.item_2").slideUp();
+    $(this)
+      .parent()
+      .siblings()
+      .find(".nav-bnt-1,.nav-bnt-2")
+      .removeClass("active ");
   });
 
   // ============ offcanvas ==================//
